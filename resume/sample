@@ -1,0 +1,86 @@
+{
+	"firstname": "Mayank",
+	"lastname": "Mayank",
+	"title": "Computer Programmer",
+	"about": "I am a good guy",
+	"avatar": "url",
+	"resume": "url",
+	"background": "DEFAULT",
+
+	"profile": {
+		"fullname": "Mayank Gupta",
+		"born": "Nov 2nd, 1999",
+		"email": "",
+		"social": {
+				"facebook": "",
+				"github": "",
+				"instagram": "",
+				"linkdine": ""
+		}
+	},
+
+	"education": [
+
+		{
+			"type": "Graphics",
+			"from": "Online Udemy",
+			"year": "2015",
+			"description": ""
+		},
+		{
+			"type": "BCA",
+			"from": "Online Udemy",
+			"year": "2019",
+			"description": ""
+		}
+
+	],
+
+	"work experience": [
+
+		{
+			"type": "BLACK TIE CORP",
+			"from": "Online Udemy",
+			"year": "2015",
+			"description": ""
+		},
+		{
+			"type": "OASIS LTDA.",
+			"from": "Online Udemy",
+			"year": "2019",
+			"description": ""
+		}
+
+	],
+
+	"skills": {
+		"PROFESSIONAL SKILLS": {
+			"comunication": 70,
+			"leadership": 80
+		},
+		"SOFTWARE SKILLS": {
+			"Adobe Photoshop": 55,
+			"Adobe Fireworks": 60
+		},
+		"CODE SKILLS": {
+			"HTML5 / CSS3": 90,
+			"Javascript": 60,
+			"PHP": 70
+		}
+
+	},
+
+
+	"interests": {
+		"ART": "Praesent tellus ligula, tincidunt et fringilla vel, tincidunt ut dui. Nulla feugiat, lacus ac malesuada lobortis, elit nunc congue nunc, vel imperdiet lorem leo a lectus.",
+
+		"GAMES": "Praesent tellus ligula, tincidunt et fringilla vel, tincidunt ut dui. Nulla feugiat, lacus ac malesuada lobortis, elit nunc congue nunc, vel imperdiet lorem leo a lectus.",
+
+
+		"BOOKS": "Praesent tellus ligula, tincidunt et fringilla vel, tincidunt ut dui. Nulla feugiat, lacus ac malesuada lobortis, elit nunc congue nunc, vel imperdiet lorem leo a lectus."
+	}
+
+
+
+
+}

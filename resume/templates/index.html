@@ -1,0 +1,271 @@
+{% import "helper.html" as html %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Page title -->
+  <title>Resume | {{ data["first name"].title() }}</title>
+  <!-- /Page title -->
+
+  <!-- CSS Files
+  ========================================================= -->
+  <!-- Google web fonts - Open Sans -->
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <!-- /Google web fonts -->
+  <!-- Bootstrap CSS -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- /Bootstrap CSS -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="static/vendor/font-awesome/css/font-awesome.min.css">
+  <!-- /Font Awesome -->
+  <!-- Nivo Lightbox -->
+  <link href="static/vendor/nivo-lightbox/nivo-lightbox.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/vendor/nivo-lightbox/themes/default/default.css" type="text/css" />
+  <!-- /Nivo Lightbox -->
+  <!-- Animate CSS -->
+  <link href="static/vendor/animate.css" rel="stylesheet">
+  <!-- /Animate CSS -->
+  <!-- Theme Styles -->
+  <link href="static/css/styles.css" rel="stylesheet">
+  {% if "theme" in data.keys()%}
+   <link href="static/css/themes/{{ data.theme }}.css" rel="stylesheet"> 
+  {% else %}
+   <link href="static/css/themes/melissa.css" rel="stylesheet">
+  {% endif %}
+  <!-- Theme Styles -->
+  <!-- / CSS Files
+  ========================================================= -->
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+
+    <script src="static/vendor/html5shiv.js"></script>
+    <script src="static/vendor/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicon and Touch Icons
+  ========================================================= -->
+  <link rel="shortcut icon" href="static/favicon-vertica.ico" type="image/x-icon">
+  <link rel="icon" href="static/favicon-vertica.ico" type="image/x-icon">
+  <link href="static/apple-touch-icon-144.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+  <link href="static/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+  <link href="static/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+  <link href="static/apple-touch-icon-57.png" rel="apple-touch-icon-precomposed">
+  <!-- /Favicon
+  ========================================================= -->
+</head>
+
+<body data-spy="scroll" data-target="#side-menu">
+
+<!-- Page Loader
+========================================================= -->
+
+{{ html.PageLoader(data) }}
+
+<!-- /End of Page loader
+========================================================= -->
+
+<!-- CONTENT
+========================================================= -->
+<section id="content-body" class="container animated">
+  <div class="row" id="intro">
+
+    <!-- Header Colors -->
+    <div class="col-md-10 col-sm-10  col-md-offset-2 col-sm-offset-1 clearfix top-colors">
+      <div class="top-color top-color1"></div>
+      <div class="top-color top-color2"></div>
+      <div class="top-color top-color3"></div>
+      <div class="top-color top-color1"></div>
+      <div class="top-color top-color2"></div>
+    </div>
+    <!-- /Header Colors -->    
+    
+    <!-- Beginning of Content -->
+    <div class="col-md-10 col-sm-10 col-md-offset-2 col-sm-offset-1 resume-container">
+      
+      <!-- Header Buttons -->
+      {{ html.HeaderButtons(data) }}
+      <!-- /Header Buttons -->
+
+      <!-- =============== PROFILE INTRO ====================-->
+      {{ html.Profile(data) }}
+
+      <!-- ============  /PROFILE INTRO ================= -->
+      
+      <!-- ============  TIMELINE ================= -->
+      <div class="timeline-wrap">
+        <div class="timeline-bg">
+
+          <!-- ====>> SECTION: PROFILE INFOS <<====-->
+          <section class="timeline profile-infos">
+            
+            {{ html.Verticle() }}
+            {{ html.Info(data) }}
+
+            <!-- /SECTION ITEM --> 
+          </section>
+          <!-- ==>> /SECTION: PROFILE INFOS -->     
+
+          <!-- ====>> SECTION: EDUCATION <<====-->
+
+          {% if "education" in data.keys() %}
+          <section class="timeline education" id="education">
+
+            {{ html.Verticle() }}
+            {{ html.Education(data) }}
+  
+          </section>
+          {% endif %}
+          <!-- ==>> /SECTION: EDUCATION <<==== -->  
+
+          <!-- ====>> SECTION: WORK EXPERIENCE <<====-->
+
+          {% if "work experience" in data.keys() %}
+          <section class="timeline work-experience" id="works">
+
+            {{ html.Verticle() }}
+            {{ html.Experience(data) }}
+
+          </section>
+          {% endif %}
+          <!-- ==>> /SECTION: WORK EXPERIENCE <<==== --> 
+
+          <!-- ====>> SECTION: SKILLS <<====-->
+          {% if "skills" in data.keys() %}
+          <section class="timeline skills" id="skills">
+
+            {{ html.Verticle() }}
+            {{ html.Skills(data) }}
+            
+          </section>
+          {% endif %}
+          <!-- ==>> /SECTION: SKILLS -->
+
+          <!-- ====>> SECTION: INTERESTS <<====-->
+          {% if "interests" in data.keys() %}
+          <section class="timeline" id="interests">
+
+            {{ html.Verticle() }}
+            {{ html.Interests(data) }}
+            
+          </section>
+          {% endif %}
+          <!-- ==>> /SECTION: INTERESTS -->
+
+           
+        
+          <!-- ====>> SECTION: CONTACT <<====-->
+          <section class="timeline" id="contact">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+          <!-- ====>> SECTION: THANK YOU <<====-->
+          <section class="timeline profile-infos">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin timeline-margin-big">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+            <!-- SECTION ITEM -->
+            <div class="line row line-thank-you">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content">
+                  <!-- Subtitle -->
+                  <h3 class="thank-you">Thank You!</h3>
+                  <!-- /Subtitle -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- / Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->            
+          </section>
+          <!-- ==>> /SECTION: PROFILE INFOS -->
+        </div>
+      </div>
+      <!-- ============  /TIMELINE ================= -->
+
+      <!-- ============  FOOTER ================= -->
+      <footer id="footer" class="row">
+        <!-- Put your Quote Here-->
+        <p class="quote">“Ideas are the beginning points of all fortunes”</p>
+        <!-- /Quote -->
+        <!-- Quote Autor -->
+        <p class="author">Napoleon Hill</p>
+        <!-- /Quote Autor -->
+      </footer>
+      <!-- ============  /FOOTER ================= -->
+    </div> 
+  </div> 
+</section>
+<!-- /CONTENT
+========================================================= -->
+
+
+<!-- Javascript Files
+========================================================= -->
+<!-- jQuery (necessary for plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- /jquery -->
+<!-- bootstrap -->
+<script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- /bootstrap -->
+<!-- easing -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- /easing -->
+<!-- jQuery Mousewheel -->
+<script src="static/vendor/jquery.mousewheel.min.js"></script>
+<!-- /jQuery Mousewheel -->
+<!-- jQuery Mousewheel Smoothscroll -->
+<script src="static/vendor/jquery.nicescroll.min.js"></script>
+<script src="static/vendor/jquery.nicescroll.plus.js"></script>
+<!-- /jQuery Mousewheel Smoothscroll -->
+<!-- Waypoints (for CSS3 animations) -->
+<script src="static/vendor/waypoints.min.js"></script>
+<!-- /waypoints -->
+<!-- Modal box-->
+<script src="static/vendor/nivo-lightbox/nivo-lightbox.min.js"></script>
+<!-- /Modal Box -->
+<!-- Carousel-->
+<script src="static/vendor/jquery.bxslider.min.js"></script>
+<!-- /Carousel -->
+<!-- Front-end Validator (for forms) -->
+<script src="static/vendor/jquery.validate.min.js"></script>
+<!-- /Front-end Validator -->
+<!-- placeholder Support for IE -->
+<script src="static/vendor/placeholders.jquery.min.js"></script>
+<!-- /placeholder support -->
+<!-- Cross-browser -->
+<script src="static/js/cross-browser.js"></script>
+<!-- /Cross-browser -->
+<!-- Configurations -->
+<script src="static/js/main.js"></script>
+<!-- /Configurations -->
+</body>
+</html>
