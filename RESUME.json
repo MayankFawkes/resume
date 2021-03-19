@@ -2,7 +2,7 @@
 	"first name": "Mayank",
 	"last name": "Gupta",
 	"title": "Computer Programmer",
-	"about": "I am a good guy",
+	"about": "Turpis, sit amet iaculis dui consectetur at. Cras sagittis molestie orci. Suspendisse ut laoreet mi. Phasellus eu tortor vehicula, blandit enim eu, auctor massa. Nulla ultricies tortor dolor, sit amet suscipit enim condimentum id. Etiam eget iaculis tellus. Varius sit amet.",
 	"avatar": "https://pixomatic.us/blog/wp-content/uploads/2019/11/pixomatic_1572877034633.png",
 	"resume": "url",
 	"theme": "james",
@@ -22,16 +22,16 @@
 	"education": [
 
 		{
-			"type": "Graphics",
-			"from": "Online Udemy",
-			"year": "2015",
-			"description": ""
+			"type": "GRAPHIC DESIGN",
+			"from": "St. Patrick University (2 Years Course)",
+			"year": "Graduation May 2013",
+			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 		},
 		{
-			"type": "BCA",
-			"from": "Online Udemy",
-			"year": "2019",
-			"description": ""
+			"type": "MASTER OF WEB DESIGN",
+			"from": "St. Patrick University (2 Years Course)",
+			"year": "Graduation May 2013",
+			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 		}
 
 	],
@@ -40,15 +40,15 @@
 
 		{
 			"type": "BLACK TIE CORP",
-			"from": "Online Udemy",
-			"year": "2015",
-			"description": ""
+			"from": "Web Designer",
+			"year": "June 2012 - Current",
+			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 		},
 		{
 			"type": "OASIS LTDA.",
-			"from": "Online Udemy",
-			"year": "2019",
-			"description": ""
+			"from": "Front-end Developer",
+			"year": "Jan 2010 - Apr 2012",
+			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 		}
 
 	],
