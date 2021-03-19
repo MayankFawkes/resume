@@ -44,7 +44,7 @@ PROFILE
 ```
 
 
-## HINT
+## HELP
 
 * make sure to use ``master`` branch
 * file names are case sensitive ex. ``RESUME.json``
