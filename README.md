@@ -30,16 +30,16 @@ SKILLS
 PROFILE
 ```
 "profile": {
-		"full name": "Mayank Gupta",
-		"born": "Nov 2nd, 1999",
-		"email": "mayank@mayank.com",
-    "other info": "details",
-		"social": {
-				"facebook": "",
-				"github": "",
-				"instagram": "",
-				"linkedin": ""
-		}
+	"full name": "Mayank Gupta",
+	"born": "Nov 2nd, 1999",
+	"email": "mayank@mayank.com",
+    	"other info": "details",
+	"social": {
+		"facebook": "",
+		"github": "",
+		"instagram": "",
+		"linkedin": ""
+	}
 },
 ```
 
